@@ -42,20 +42,20 @@ CPMAddPackage(
         DOWNLOAD_ONLY True
 )
 
-if (enet_ADDED)
-    add_library(enet)
-    target_include_directories(enet PUBLIC "${enet_SOURCE_DIR}/include")
-    target_sources(enet PRIVATE
-            ${enet_SOURCE_DIR}/callbacks.c
-            ${enet_SOURCE_DIR}/compress.c
-            ${enet_SOURCE_DIR}/host.c
-            ${enet_SOURCE_DIR}/list.c
-            ${enet_SOURCE_DIR}/packet.c
-            ${enet_SOURCE_DIR}/peer.c
-            ${enet_SOURCE_DIR}/protocol.c
-            ${enet_SOURCE_DIR}/unix.c
-            ${enet_SOURCE_DIR}/win32.c)
-endif ()
+#if (enet_ADDED)
+#    add_library(enet)
+#    target_include_directories(enet PUBLIC "${enet_SOURCE_DIR}/include")
+#    target_sources(enet PRIVATE
+#            ${enet_SOURCE_DIR}/callbacks.c
+#            ${enet_SOURCE_DIR}/compress.c
+#            ${enet_SOURCE_DIR}/host.c
+#            ${enet_SOURCE_DIR}/list.c
+#            ${enet_SOURCE_DIR}/packet.c
+#            ${enet_SOURCE_DIR}/peer.c
+#            ${enet_SOURCE_DIR}/protocol.c
+#            ${enet_SOURCE_DIR}/unix.c
+#            ${enet_SOURCE_DIR}/win32.c)
+#endif ()
 
 add_library(${PROJECT_NAME} INTERFACE)
 target_link_libraries(${PROJECT_NAME} INTERFACE
@@ -71,7 +71,7 @@ target_link_libraries(${PROJECT_NAME} INTERFACE
         cglm
         assimp::assimp
         cimgui
-        enet
+        #enet
 )
 
 if (PROJECT_IS_TOP_LEVEL)
