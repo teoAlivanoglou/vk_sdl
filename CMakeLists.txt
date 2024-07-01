@@ -13,10 +13,10 @@ file(
 )
 include(${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake)
 
-CPMAddPackage("gh:libsdl-org/SDL#6cf84e2")
-CPMAddPackage("gh:libsdl-org/SDL_image#7744158")
-CPMAddPackage("gh:libsdl-org/SDL_ttf#f9b636f")
-CPMAddPackage("gh:libsdl-org/SDL_mixer#8ab0d03")
+CPMAddPackage("gl:freedesktop-sdk/mirrors/github/libsdl-org/SDL#6cf84e2")
+CPMAddPackage("gh:freedesktop-sdk/mirrors/github/libsdl-org/SDL_image#7744158")
+CPMAddPackage("gh:freedesktop-sdk/mirrors/github/libsdl-org/SDL_ttf#f9b636f")
+CPMAddPackage("gh:freedesktop-sdk/mirrors/github/libsdl-org/SDL_mixer#8ab0d03")
 
 CPMAddPackage("gh:google/googletest#v1.14.x")
 
