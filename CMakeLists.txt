@@ -23,9 +23,9 @@ CPMAddPackage("gh:KhronosGroup/Vulkan-Headers#vulkan-sdk-1.3.268.0")
 CPMAddPackage("gh:KhronosGroup/SPIRV-Headers#vulkan-sdk-1.3.268.0")
 CPMAddPackage("gh:KhronosGroup/SPIRV-Tools#vulkan-sdk-1.3.268.0")
 
-set(BUILD_SHARED_LIBS FALSE)
+#set(BUILD_SHARED_LIBS FALSE)
 CPMAddPackage("gh:KhronosGroup/glslang#vulkan-sdk-1.3.268.0")
-set(BUILD_SHARED_LIBS TRUE)
+#set(BUILD_SHARED_LIBS TRUE)
 
 
 CPMAddPackage("gh:zeux/volk#41c8f70")
