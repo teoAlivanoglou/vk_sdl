@@ -7,9 +7,8 @@ set(CMAKE_PDB_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 file(
         DOWNLOAD
-        https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.3/CPM.cmake
+        https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.40.0/CPM.cmake
         ${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake
-        EXPECTED_HASH SHA256=cc155ce02e7945e7b8967ddfaff0b050e958a723ef7aad3766d368940cb15494
 )
 include(${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake)
 
@@ -23,7 +22,11 @@ CPMAddPackage("gh:google/googletest#v1.14.x")
 CPMAddPackage("gh:KhronosGroup/Vulkan-Headers#vulkan-sdk-1.3.268.0")
 CPMAddPackage("gh:KhronosGroup/SPIRV-Headers#vulkan-sdk-1.3.268.0")
 CPMAddPackage("gh:KhronosGroup/SPIRV-Tools#vulkan-sdk-1.3.268.0")
+
+set(BUILD_SHARED_LIBS FALSE)
 CPMAddPackage("gh:KhronosGroup/glslang#vulkan-sdk-1.3.268.0")
+set(BUILD_SHARED_LIBS TRUE)
+
 
 CPMAddPackage("gh:zeux/volk#41c8f70")
 
