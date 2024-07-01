@@ -31,7 +31,7 @@ CPMAddPackage("gh:GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator#dc8a3fb")
 
 CPMAddPackage("gh:recp/cglm#d93b46b")
 
-CPMAddPackage("gh:assimp/assimp#a7cfa32")
+CPMAddPackage("gh:assimp/assimp#10df90e")
 
 CPMAddPackage("gh:cimgui/cimgui#4ca6b29")
 
